@@ -1,0 +1,165 @@
+body{background: #4d4d4d;margin: 0;padding: 0;}
+#wrap {width: 1000px;margin: 0 auto; }
+#header {height: 376px; width: 1000px;}
+#leftside {min-height: 300px; width: 354px; float: left;}
+#main {min-height: 10px; width: 510px; margin-left: 434px; }
+
+#leftside ul li {list-style: none;}
+#leftside ul li a{
+display: block;
+padding: 3px;
+margin-top: 5px;
+text-align: center;
+color: white;
+font-size: 20px;
+font-family: ¨Courier New¨;
+background:#504416 ;
+}
+#slides{
+    position: relative;
+    text-align: center;
+    
+}
+#slides{
+    margin: 0 auto;
+}
+#slides article{
+    width: 20%;
+    float: left;
+}
+#slides .image{
+    width: 500%;
+    line-height: 0;
+}
+#overflow{
+    width: 100%;
+    overflow: hidden;
+}
+article img{
+    width: 100%;
+}
+#desktop:checked ~ #slides{
+    max-width: 960px;
+}
+#switch1:checked ~ #controls label:nth-child(5)
+#switch1:checked ~ #controls label:nth-child(1)
+#switch1:checked ~ #controls label:nth-child(2)
+#switch1:checked ~ #controls label:nth-child(3)
+#switch1:checked ~ #controls label:nth-child(4){
+    background: url(/images/prev.png) no-repeat;
+    float: left;
+    margin: 0 0 0 -84px;
+    display: block;
+    height: 68px;
+    width: 68px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2)
+#switch1:checked ~ #controls label:nth-child(3)
+#switch1:checked ~ #controls label:nth-child(4)
+#switch1:checked ~ #controls label:nth-child(5)
+#switch1:checked ~ #controls label:nth-child(1){
+    background: url(/images/next.png) no-repeat;
+    float: right;
+    margin: 0 -84px 0 0;
+    display: block;
+    height: 68px;
+    width: 68px;
+}
+
+label, a{
+    cursor: pointer;
+}
+
+.all input{
+    display: none;
+}
+
+#switch1:checked ~ #slides .image{
+    margin-left: 0;
+}
+#switch2:checked ~ #slides .image{
+    margin-left: -100%;
+}
+#switch3:checked ~ #slides .image{
+    margin-left: -200%;
+}
+#switch4:checked ~ #slides .image{
+    margin-left: -300%;
+}
+#switch5:checked ~ #slides .image{
+    margin-left: -400%;
+}
+
+#controls{
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 50px;
+}
+
+#active label{
+    border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+}
+
+#active{
+    margin: 23% 0 0;
+    text-align: center;
+}
+
+#active label:hover{
+    background: #76c8ff;
+    border-color: #777 !important;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+    background: #18a3dd;
+    border-color: #18a3dd !important;
+}
+
+#slides .image{
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{
+    opacity: 0.6;
+}
+#controls label{
+    transition: opacity 0.2s ease-out;
+}
+a.disabled{
+    pointer-events: none;
+    cursor: default;
+    color: #888;
+}
+p{font-size: 19px;
+ font-family: 'Franklin Gothic Medium', sans-serif;
+ font-style: italic;
+ color: white;
+}
+p.padding {
+    padding-left: 2cm;}
+dd{font-size: 19px;
+ font-family: 'Franklin Gothic Medium', sans-serif;
+ font-style: italic;
+ color: white;
+}
+footer{
+    width: 100%;
+    padding: 1%;
+    height: 50%;
+    background-color: #0b3760;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    display: flex;  
+}
+
+ 
